@@ -22,3 +22,5 @@
 - 16:モジュール（中）
 - 17:Node.js(低)
 
+## 参考文献
+- ７：スコープ　JavaScript中級者への道【3. 関数スコープ】（https://qiita.com/matsuby/items/1010ae38ee6258fd8020）
