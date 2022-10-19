@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // let val = 'global';
+
+    // function fn1(){
+    //   let val = 'in fn';
+
+    //   if(Math.random() < .5){
+    //     console.log(val);
+    //     fn1();
+    //   }
+
+    //   function fn2(){
+    //     console.log(val);
+    //   }
+
+    //   console.log(val);
+
+    //   fn2();
+
+    //   return val;
+    // }
+
+    // function fn3(){
+    //   console.log(val);
+    // }
+
+    // console.log(val);
+
+    // const result = fn1();
+
+    // console.log(result);
+
+    // fn3();
+
+    const delayMessageFactory = (despFn, ms) => msg => setTimeout(() =>despFn(msg), ms);
+
+    const dialog = delayMessageFactory(alert, 2000);
+    dialog('hello');
+
+    const log = delayMessageFactory(console.log, 1000);
+    log('hello');
+  </script>
+</body>
+</html>

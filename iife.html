@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // (function fnA() {
+    //   const val = '即時関数外から参照不可';
+    // })();
+
+    // (function fnB() {
+    //   console.log(val); //error
+    // })();
+
+    if (true) {
+      var hoge = 'hoge';
+    }
+
+    for (var i = 0; i < 3; i++) {
+      var fuga = 'fuga';
+    }
+
+    // ブロックスコープが無いので、アクセス出来てしまう
+    console.log(hoge);  // => 'hoge'
+    console.log(i);     // => 3
+    console.log(fuga)   // => 'fuga'
+  </script>
+</body>
+
+</html>

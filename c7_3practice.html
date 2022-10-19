@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    let rand;
+
+    function chance(){
+      let result;
+      rand = Math.random();
+
+      if(rand < 5){
+        result = 'success';
+      }else{
+        result = 'failure';
+      }
+
+      return result;
+    }
+
+    console.log(chance());
+  </script>
+</body>
+</html>
