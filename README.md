@@ -24,3 +24,5 @@
 
 ## 参考文献
 - ７：スコープ　JavaScript中級者への道【3. 関数スコープ】（https://qiita.com/matsuby/items/1010ae38ee6258fd8020）
+- 8:thisキーワード　JavaScript の this を理解する多分一番分かりやすい説明（　https://qiita.com/takkyun/items/c6e2f2cf25327299cf03　）
+- 8:thisキーワード　JavaScriptの「this」は「4種類」？？（　https://qiita.com/takeharu/items/9935ce476a17d6258e27　）
