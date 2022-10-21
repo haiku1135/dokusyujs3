@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    function Test(){}
+
+    Test.prop = 'value';
+
+    console.log(Test.prop);
+
+    console.log('prototype' in Test);
+    console.log(typeof Test.prototype);
+
+    function Person(name){
+      this.name = name;
+    }
+
+    Person.prototype.hello = function(){
+      console.log(this.name);
+    }
+
+    const taro = new Person('dokusyu');
+    taro.hello();
+
+    const hanako = new Person('dokusyuhanako');
+    hanako.hallo();
+  </script>
+</body>
+</html>
