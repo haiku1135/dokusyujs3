@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    const targetString = '5341nb;g090-1234-5678f29q0g070-987605432nfw';
+
+    const mobileNumPattern = /(070|080|090)-\d{4}-\d{4}/g;
+
+    const mobileNums = targetString.matchAll(mobileNumPattern);
+
+    for(const mobileNum of mobileNums){
+      console.log(mobileNum[0]);
+    }
+  </script>
+</body>
+</html>
