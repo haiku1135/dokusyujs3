@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    const todos = [
+      {title: 'bangohan', priority: 2, completed: false},
+      {title: 'gomidasi', priority: 1, completed: true},
+      {title: 'syokuzai', priority: 3, completed: false},
+      {title: 'sentaku', priority: 2, completed: true},
+      {title: 'rokuga', priority: 1, completed: false}
+    ];
+
+    function completedTask({title, completed}){
+      if(completed){
+        console.log(title, 'is completed!');
+      }else{
+        console.log(title, 'is not completed!');
+      }
+    }
+
+    todos.forEach(completedTask);
+
+    const notCompleted = todos.filter(({completed}) => {
+      return completed !== true;
+    });
+
+    notCompleted.sort((todoA, todoB) => {
+      return todoB.priority - todoA.priority;
+    });
+
+    completedTask(notCompleted);
+  </script>
+</body>
+</html>
