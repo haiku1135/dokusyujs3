@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    let instance = new Promise((resolve, reject) => {
+      setTimeout(() => {
+        const date = new Date();
+        const second = data.getSeconds();
+
+        if(second % 2){
+          reject(second);
+        }else{
+          resolve(second);
+        }
+      }, 1000);
+    }).then(second => {
+      console.log(second);
+    }).catch(second => {
+      console.error(second);
+    }).finally(() => {
+      console.log('end');
+    });
+  </script>
+</body>
+</html>

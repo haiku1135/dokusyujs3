@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    function action(actionName, duration){
+      return new Promise(resolve => {
+        setTimeout(() => {
+          console.log(actionName);
+          resolve();
+        }, duration);
+      });
+    }
+
+    // function makeAction(){
+    //   action('sanpo', 500)
+    //   .then(() => action('tyosyoku', 200))
+    //   .ten(() => Promise.all([action('tyusyoku', 500), action('osyaberi', 100)]))
+    //   .then(() => action('yusyoku', 600))
+    //   .then(() => action('syumi', 400));
+    // }
+
+
+    async function makeAction(){
+      await action('sanpo', 500);
+      await action('sanpo', 500);
+      await Promise.all([action('tyusyoku', 500), action('osyaberi', 100)]);
+      await action('sanpo', 500);
+      await action('sanpo', 500);
+    }
+    makeAction
+  </script>
+</body>
+</html>
