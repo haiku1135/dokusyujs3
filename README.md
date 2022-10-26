@@ -16,7 +16,7 @@
 - 10:組み込みオブジェクト（低）
 - 11:コレクション（中）
 - 12:反復処理（高）
-- 13:非同期処理（中）
+- 13:非同期処理（高）
 - 14:DOM（中）
 - 15:イベント（高）
 - 16:モジュール（中）
@@ -26,3 +26,6 @@
 - ７：スコープ　JavaScript中級者への道【3. 関数スコープ】（https://qiita.com/matsuby/items/1010ae38ee6258fd8020）
 - 8:thisキーワード　JavaScript の this を理解する多分一番分かりやすい説明（　https://qiita.com/takkyun/items/c6e2f2cf25327299cf03　）
 - 8:thisキーワード　JavaScriptの「this」は「4種類」？？（　https://qiita.com/takeharu/items/9935ce476a17d6258e27　）
+
+## メモ
+- 4周目は難易度低〜中に関しては練習問題だけをやりわからなかったらその項を復習、難易度高に関しては章ごと学習する
